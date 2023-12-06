@@ -1,6 +1,9 @@
 #!/bin/bash
+#2 variables
+#$1 is the id of policy
+#$2 is the pass of elastic
 
-curl --user elastic:nylDWmG367XBj4Vn+ZUO --request POST \
+curl --user elastic:$2 --request POST \
   --url 'https://10.202.0.180:5601/api/fleet/package_policies' \
   -H 'Accept: */*' \
   -H 'Accept-Language: en-US,en;q=0.9' \
