@@ -18,7 +18,7 @@ curl --cacert /opt/siem/ca.crt -k --request POST \
   "name": "Protect",
   "description": "",
   "namespace": "default",
-  "policy_id": "$1", 
+  "policy_id": "'$1'", 
   "enabled": true,
   "inputs": [
     {
