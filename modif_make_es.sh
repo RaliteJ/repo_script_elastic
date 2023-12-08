@@ -1,3 +1,7 @@
 #!/bin/bash
 
-sed -i 's/make curlES//g' /opt/siem/scripts/lance-ES.sh
+sed -i 's/echo "test de ES"
+make curlES
+
+
+#sudo chown -R root.root $(pwd)/config/exit 0/g' /opt/siem/scripts/lance-ES.sh
