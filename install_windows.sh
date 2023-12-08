@@ -3,7 +3,7 @@
 #$1 is the id of policy
 #$2 is the pass of elastic
 
-curl --user elastic:$2 --request POST \
+curl  --cacert /opt/siem/ca.crt -k --user elastic:$2 --request POST \
   --url 'https://10.202.0.180:5601/api/fleet/package_policies' \
   -H 'Accept: */*' \
   -H 'Accept-Language: en-US,en;q=0.9' \
