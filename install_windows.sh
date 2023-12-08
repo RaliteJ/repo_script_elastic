@@ -16,7 +16,7 @@ curl --user elastic:$2 --request POST \
   -d \
 '
 {
-  "policy_id": "$1",
+  "policy_id": "'$1'",
   "package": {
     "name": "windows",
     "version": "1.43.0"
