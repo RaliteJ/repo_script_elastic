@@ -34,5 +34,3 @@ EOF
 FLEET_SERVER_ID=$(curl -X POST "${ELASTICSEARCH_URL}/_fleet/setup" \
   --header "Content-Type: application/json" \
   --data-raw "${FLEET_SERVER_CONFIG}" | jq -r '.id')
-
-echo "Fleet Server created with ID: ${FLEET_SERVER_ID}"
